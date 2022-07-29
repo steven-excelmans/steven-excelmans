@@ -1,9 +1,16 @@
+@import "fonts";
+@import "sections";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-$body-color: theme('colors.gray.800');
+//$body-color: theme('colors.baby-powder');
 
-body {
-  background: $body-color;
+html {
+  @apply overflow-scroll;
+}
+
+::-webkit-scrollbar {
+  @apply w-0 h-0 bg-transparent;
 }

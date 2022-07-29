@@ -1,0 +1,36 @@
+$color-wintergreen-dream: theme('colors.wintergreen-dream');
+
+.hero {
+  @apply relative h-[75vh] w-full overflow-hidden bg-opal;
+}
+
+.hero__skew-left {
+  @apply absolute -bottom-[100%] right-[50%] h-full w-full origin-top-right skew-y-[15deg] bg-baby-powder;
+}
+
+.hero__skew-right {
+  @apply absolute -bottom-[100%] left-[50%] h-full w-full origin-top-left skew-y-[-15deg] bg-baby-powder;
+}
+
+.hero__typing {
+  @apply border-r-2 border-r-opal overflow-hidden whitespace-nowrap w-0;
+  animation: typing 2.5s steps(25, end) forwards, blinking .85s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinking {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: $color-wintergreen-dream;
+  }
+}
