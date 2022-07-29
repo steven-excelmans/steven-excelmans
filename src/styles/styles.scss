@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$body-color: theme('colors.gray.800');
+
+body {
+  background: $body-color;
+}
