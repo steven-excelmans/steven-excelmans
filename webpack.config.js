@@ -7,7 +7,7 @@ const DEV = "development";
 const PRD = "production";
 
 let config = {
-  entry: ["./src/index"],
+  entry: ["./src/index", "./src/ts/alpine"],
   mode: DEV,
   module: {
     rules: [
