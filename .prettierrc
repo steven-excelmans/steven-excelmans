@@ -1,0 +1,21 @@
+{
+  "singleQuote": false,
+  "printWidth": 150,
+  "tabWidth": 4,
+  "bracketSpacing": false,
+  "trailingComma": "none",
+  "bracketSameLine": true,
+  "arrowParens": "always",
+  "quoteProps": "consistent",
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": [
+        "*.jsx"
+      ],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}
